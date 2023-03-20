@@ -2,6 +2,7 @@
 ## This app will help you clean up your organizations in Zendesk.
 Cleanup your Zendesk organizations by removing all users with a non-matching email domain, or by adding users with a matching domain.
 
+This app is a showcase from the article [Cleaning up Zendesk Organisations with a sidebar app](https://internalnote.com/cleaning-up-organisations-with-a-sidebar-app)
 ## Demo Data
 ### Avengers
 ```
