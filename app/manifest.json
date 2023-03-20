@@ -1,0 +1,21 @@
+{
+  "name": "Organization Cleaner",
+  "author": {
+    "name": "Thomas Verschoren",
+    "email": "note@internalnote.com",
+    "url": "https://internalnote.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "organization_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true
+      }
+    }
+  },
+  "version": "1.0.0",
+  "frameworkVersion": "2.0",
+  "termsConditionsURL": "https://internalnote.com/terms-and-conditions/"
+}

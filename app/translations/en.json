@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "Organization Cleanup",
+    "short_description": "This app will help you clean up your organizations in Zendesk",
+    "long_description": "Cleanup your Zendesk organizations by removing all users with a non-matching email domain, or by adding users with a matching domain.",
+    "installation_instructions": "Simply click install."
+  }
+}
