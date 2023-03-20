@@ -1,3 +1,5 @@
+![Apple TV 4K Copy 25@0 5x](https://user-images.githubusercontent.com/894026/226398121-57373c25-f70e-4457-bc63-5cf6573bbb80.jpg)
+
 # Organization Cleanup
 ## This app will help you clean up your organizations in Zendesk.
 Cleanup your Zendesk organizations by removing all users with a non-matching email domain, or by adding users with a matching domain.
@@ -18,6 +20,8 @@ curl --location 'https://{subdomain}.zendesk.com/api/v2/users/create_or_update_m
     {"name":"Winter Soldier","email":"winter.soldier@hydra.example","tags":["org_demo"]}
 ]}'
 ```
+<img width="1512" alt="avengers_2" src="https://user-images.githubusercontent.com/894026/226398156-599fb9e9-aad8-44c6-9de3-507021e14e9e.png">
+
 
 ### Seven Dwarfs
 ```
@@ -34,3 +38,7 @@ curl --location 'https://{subdomain}.zendesk.com/api/v2/users/create_or_update_m
     {"name":"Bashful","email":"bashful@sevendwarfs.example","tags":["org_demo"]}
 ]}'
 ```
+<img width="1512" alt="dwarfs_2" src="https://user-images.githubusercontent.com/894026/226398230-4ef92ef2-3518-4107-930c-641f48a4fda2.png">
+
+
+
