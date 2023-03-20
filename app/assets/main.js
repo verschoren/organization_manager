@@ -35,8 +35,8 @@ function removeUsers() {
             $('#results').empty();
             var users = data.users;
             var count = 0;
-
             // loop through users and remove those that don't match the domain
+            
             jQuery.each( users, function( i, val ) {
                 if (val.email != null){
                     var domain = val.email.split('@')[1];
@@ -118,7 +118,6 @@ function addUsertoDomain(domain,organization_id){
             $('#summary').html(`No users found.`);
             return;
         } else {
-            $('#summary').html('');
             jQuery.each( users, function( i, user ) {
                 var output = `<li class="py-4">
                     <div class="flex items-center space-x-4">
@@ -155,7 +154,7 @@ function addUsertoDomain(domain,organization_id){
                     $('#results').append(output);
                 }
             });
-            $('#summary').append(`Added ${users.length} users for ${domain}.`);
+            $('#summary').html(`Added ${users.length} users for ${domain}.`);
         }
     });
 }
