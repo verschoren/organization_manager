@@ -20,9 +20,9 @@ $('#add_users').click(function() {
 });
 
 function removeUsers() {
-    client.get('organization').then(function(data) {
-        var domains = data.organization.domains.split(' ');
-        var organization_id = data.organization.id;
+    client.get('organization').then(function(organization) {
+        var domains = organization.organization.domains.split(' ');
+        var organization_id = organization.organization.id;
         
         // check all users in organization and remove those that don't match the domain
         let options = {
@@ -31,9 +31,9 @@ function removeUsers() {
             type: "GET",
         };
 
-        client.request(options).then((data) => {
+        client.request(options).then((users) => {
             $('#results').empty();
-            var users = data.users;
+            var users = users.users;
             var count = 0;
             // loop through users and remove those that don't match the domain
             
@@ -74,6 +74,7 @@ function removeUsers() {
                             };
                             client.request(options_nomatch).then((data) => {
                                 $('#results').append(output);
+                                client.invoke('notify', 'Users removed!');
                             });
                         } else {
                             $('#results').append(output);
@@ -149,6 +150,7 @@ function addUsertoDomain(domain,organization_id){
                     };
                     client.request(options_add).then((data) => {
                         $('#results').append(output);
+                        client.invoke('notify', 'Users added!');
                     });
                 } else {
                     $('#results').append(output);
