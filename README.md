@@ -6,6 +6,12 @@ Cleanup your Zendesk organizations by removing all users with a non-matching ema
 
 This app is a showcase from the article [Cleaning up Zendesk Organisations with a sidebar app](https://internalnote.com/cleaning-up-organisations-with-a-sidebar-app)
 ## Demo Data
+
+⚠️ Before running these commands, remember this note about Zendesk API on Create or Update Many Users endpoint:
+> Note: To protect the data in your Zendesk account, bulk user imports are not enabled by default in Zendesk accounts. 
+> The account owner must contact [Zendesk Customer Support](https://support.zendesk.com/hc/en-us/articles/4408843597850) to enable the imports. 
+> A 403 Forbidden error is returned if data imports are not enabled.
+
 ### Avengers
 ```
 curl --location 'https://{subdomain}.zendesk.com/api/v2/users/create_or_update_many' \
